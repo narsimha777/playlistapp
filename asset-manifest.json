@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/playlistapp/static/css/main.b618bcd2.css",
+    "main.js": "/playlistapp/static/js/main.12877d35.js",
+    "static/js/787.7d983aef.chunk.js": "/playlistapp/static/js/787.7d983aef.chunk.js",
+    "static/media/logo.svg": "/playlistapp/static/media/logo.2797dc853f98f45d8ebb.svg",
+    "index.html": "/playlistapp/index.html",
+    "main.b618bcd2.css.map": "/playlistapp/static/css/main.b618bcd2.css.map",
+    "main.12877d35.js.map": "/playlistapp/static/js/main.12877d35.js.map",
+    "787.7d983aef.chunk.js.map": "/playlistapp/static/js/787.7d983aef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b618bcd2.css",
+    "static/js/main.12877d35.js"
+  ]
+}
