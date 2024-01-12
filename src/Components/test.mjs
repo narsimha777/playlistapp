@@ -3,8 +3,8 @@ import SpotifyWebApi from "spotify-web-api-node";
 
 // credentials are optional
 var spotifyApi = new SpotifyWebApi({
-  clientId: '12f36318142648afbd5d035f4845da27',
-  clientSecret: '5494f4dfc66d47f09d220517fb73f89f',
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
   redirectUri: 'http://localhost:3000/'
 });
 

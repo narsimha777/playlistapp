@@ -1,5 +1,5 @@
-const client_id = '12f36318142648afbd5d035f4845da27';
-const client_secret = '5494f4dfc66d47f09d220517fb73f89f';
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
 
 const authOptions = {
   method: 'POST',
@@ -108,7 +108,7 @@ const spotify={
     }
     ,
     async authenticate(){
-      const REDIRECT_URI = 'https://narsimha777.github.io/playlistapp/'; 
+      const REDIRECT_URI = 'http://localhost:3000/playlistapp'; 
 
       const scopes = ['streaming']; 
       const loginUrl = `https://accounts.spotify.com/authorize?client_id=${client_id}&redirect_uri=${REDIRECT_URI}&scope=${scopes.join('%20')}&response_type=token`;

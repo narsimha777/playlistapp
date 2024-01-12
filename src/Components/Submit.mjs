@@ -1,14 +1,25 @@
-import React from 'react';
-import spotify from './Playlist.mjs';
+import React, { useState, useEffect } from 'react';
 
-const link = await spotify.authenticate();
+const Submit = () => {
+  const [authLink, setAuthLink] = useState('');
 
-function  Submit(props){
-    return (
-      <div>
-        <a href={link}><button>Create Playlist</button></a>
-      </div>
-    );
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('http://localhost:3000/login');
+      const data = await response.json();
+      setAuthLink(data.authLink);
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <a href={authLink}>
+        <button>Create Playlist</button>
+      </a>
+    </div>
+  );
 };
 
 export default Submit;
